@@ -10,6 +10,14 @@ spring:
           username: lingoace-lms
           password: clmdxoVgR7RD
 
+  #    mq-prod
+  rabbitmq:
+    username: admin
+    password: lingoace@123
+    virtual-host: prod
+    addresses: mq-server:5672
+
+
 log:
   path: /data/logs/edu/cloudDisk
 

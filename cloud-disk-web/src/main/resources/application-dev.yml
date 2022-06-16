@@ -10,6 +10,12 @@ spring:
           username: lingoace-lms
           password: clmdxoVgR7RD
 
+  rabbitmq:
+    username: test-lingoace
+    password: PjGXedss!HOfz7#BHD2oM8
+    virtual-host: test-lingoace
+    addresses: 54.219.244.229:13334
+
 log:
   path: /data/logs/edu/cloudDisk
 
@@ -17,3 +23,4 @@ client:
   pub-studentcenter-host: http://10.1.4.225:8400
   teacher-manage-host: http://10.1.4.225:9001
   pub-usercent-host: http://10.1.4.225:8405
+
