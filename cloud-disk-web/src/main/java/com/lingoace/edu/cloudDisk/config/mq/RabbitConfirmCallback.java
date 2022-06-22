@@ -16,9 +16,6 @@ public class RabbitConfirmCallback implements RabbitTemplate.ConfirmCallback {
 
     @Override
     public void confirm(CorrelationData correlationData, boolean ack, String cause) {
-        //correlationData必须在发送的时候设置，否则将会使null，如下：
-        //CorrelationData correlationData = new CorrelationData("1");
-        //rabbitTemplate.convertAndSend("OrderDispathExchange","kk","{\"msgId\":1,\"data\":\"测试\"}",correlationData);
         LOGGER.info("消息唯一标识: {}", correlationData);
         LOGGER.info("确认状态: {}", ack);
         LOGGER.info("造成原因: {}", cause);

@@ -43,7 +43,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("云盘 APIs")
+                .title("LingoAce云盘 APIs")
                 .description("EDU Cloud Disk apis document")
                 .termsOfServiceUrl("http://dev-disk.lingoace.com")
                 .version("1.0")
